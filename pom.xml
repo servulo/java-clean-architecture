@@ -5,9 +5,7 @@
 	<groupId>br.com.sprj</groupId>
 	<artifactId>school</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<dependencies>
-	
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -22,9 +20,7 @@
 			<version>5.6.2</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -34,6 +30,12 @@
 				<configuration>
 					<release>11</release>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
+				<version>2.22.0</version>
 			</plugin>
 		</plugins>
 	</build>
